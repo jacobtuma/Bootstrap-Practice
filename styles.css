@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.body-container {
+    margin: 0;
+	padding: 0;
+
+}
+.header {
+	background: url('./corinne-kutz-211251.jpg');
+    padding: 30vh 40px;
+    font-family: 'Istok Web';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: .8;
+}
+.header h2 {
+	color: #545565;
+	font-size: 45px;
+    letter-spacing: 9px;
+    position: absolute;
+    top: 80px;
+}
+.icons-row {
+	margin: 20px;
+}
+.icon-container {
+    text-align: center;	
+    margin-bottom: 60px;
+}
+
+.area2 {
+    background: url('./area2.jpeg');
+    padding: 30vh 40px;
+    font-family: 'Istok Web';
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: .8;
+}
+.fa {
+    font-size: 80px;
+}

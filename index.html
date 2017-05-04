@@ -128,8 +128,16 @@
 	<div class="modal">
 		<h2>Contact Information</h2>
 		<ul>
-			<li>Phone number: 123-456-7890</li>
-			<li>Email: jacob@gmail.com</li>
+
+		<form id="nameForm"  action="submit">
+		First Name: <br>
+			<input id="firstName" name="firstName" type="text">
+		<br>Last Name: <br>
+			<input id="lastName" name="lastName" type="text">
+			<br>
+			<button id="formSubmit" class="ghostbutton" return="false;">Submit</button>
+		</form>
+
 		</ul>
 		<button class="btn-danger form-control" id="closeModal">Close</button>
 	</div> 	<!-- Modal End -->
@@ -137,6 +145,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/js/jquery.easyModal.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script>
 	$(".modal").easyModal({
 		top: 100,
@@ -145,13 +154,33 @@
 		overlayClose: true,
 		closeOnEscape: true
 	});
-
 	$("#moreInfo").click(function(){
 		$(".modal").trigger('openModal');
 	});
 
 	$("#closeModal").click(function(){
 		$(".modal").trigger('closeModal');
+	});
+	$('#formSubmit').click(function() {
+		$('#nameForm').validate({ // initialize the plugin
+			rules: {
+				firstName: {
+					required: true
+				},
+				lastName: {
+					required: true
+		       }    
+			},
+			submitHandler: function (form) {
+		var firstName = $("#firstName").val().trim()
+         var lastName = $("#lastName").val().trim()
+          var message = "First Name:" + firstName;
+          message += "\nLast Name:" + lastName;
+         alert(message)
+
+
+	}
+	})
 	});
 
 </script>

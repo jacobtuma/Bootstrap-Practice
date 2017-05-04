@@ -2,43 +2,129 @@ body {
 	margin: 0;
 	padding: 0;
 }
+a {
+	text-decoration: none;
+}
 .body-container {
-    margin: 0;
+	margin: 0;
 	padding: 0;
 
 }
+.row {
+	margin: 0;
+}
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
 .header {
 	background: url('./corinne-kutz-211251.jpg');
-    padding: 30vh 40px;
-    font-family: 'Istok Web';
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    opacity: .8;
+	padding: 30vh 40px;
+	font-family: 'Istok Web';
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	opacity: .8;
 }
-.header h2 {
+.header h1 {
 	color: #545565;
 	font-size: 45px;
-    letter-spacing: 9px;
-    position: absolute;
-    top: 80px;
-}
-.icons-row {
-	margin: 20px;
+	letter-spacing: 9px;
+	position: absolute;
+	top: 100px;
 }
 .icon-container {
-    text-align: center;	
-    margin-bottom: 60px;
+	text-align: center;	
+	margin-bottom: 30px;
 }
-
+.icons-row-one {
+	margin: 20px;
+	margin-top: 45px;
+}
+.icons-row-one p {
+	font-family: 'Merriweather', Serif;
+}
+.icons-row-one .fa {
+	font-size: 80px;
+}
 .area2 {
-    background: url('./area2.jpeg');
-    padding: 30vh 40px;
-    font-family: 'Istok Web';
-    background-attachment: fixed;
-    background-position: center; 
-    opacity: .8;
+	background: url('./area2.jpeg');
+	font-family: 'Istok Web';
+	background-attachment: fixed;
+	background-position: center; 
+	opacity: .9;
 }
-.fa {
-    font-size: 80px;
+.iphone-div img{
+	width: 100%;
+}
+.area2 .col-md-7 {
+	padding-right: 80px;
+}
+.area2 h2{
+	font-size: 108px;
+	color: white;
+}
+.area2 p {
+	font-family: Serif, Georgia;
+	color: ghostwhite;
+	font-size: 21px;
+	line-height: 26px;
+	letter-spacing: 1.5px;
+	margin-bottom: 20px;
+}
+.icons-row-two {
+	margin: 45px 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.icons-row-two h3 {
+	font-family: 'Merriweather', Serif;
+	font-size: 24px;
+}
+.icons-row-two .fa {
+	font-size: 60px;
+}
+.icons-row-two a {
+	color: maroon;
+	text-decoration: none;
+}
+.icons-row-two a:hover {
+	color: lightblue;
+}
+.ghostbutton,
+.ghostbutton:visited{
+	display: inline-block;
+	width: 200px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.ghostbutton:hover,
+.ghostbutton:active  {
+	background-color: #fff;
+	text-decoration: none;
+	color: black;
+}
+.modal {
+	background: white;
+	height: 325px;
+	width: 440px;
+	padding: 5px 46px;
+	border-radius: 10px;
+}
+.modal ul {
+	font-size: 20px;
+	margin-bottom: 150px;
+}
+#closemodal {
+	right: 0;
+}
+footer {
+	padding: 40px 30px;
+	background-color: lightgray;
+	text-align: center;
 }

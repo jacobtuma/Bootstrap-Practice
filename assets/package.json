@@ -1,12 +1,19 @@
 {
-  "name": "assets",
+  "name": "bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node index.js"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "jtuma",
+  "license": "ISC",
+  "engines": {
+    "node": "6.9.2"
+  }
 }

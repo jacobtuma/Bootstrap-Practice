@@ -17,8 +17,9 @@ a {
 	margin: 0;
 	padding: 0;
 }
+/*Header Styles*/
 .header {
-	background: url('./corinne-kutz-211251.jpg');
+	background: url('../images/corinne-kutz-211251.jpg');
 	padding: 30vh 40px;
 	font-family: 'Istok Web';
 	background-repeat: no-repeat;
@@ -33,6 +34,7 @@ a {
 	position: absolute;
 	top: 100px;
 }
+/*Area 1 Styles*/
 .icon-container {
 	text-align: center;	
 	margin-bottom: 30px;
@@ -47,21 +49,30 @@ a {
 .icons-row-one .fa {
 	font-size: 80px;
 }
+@media screen and (max-width: 992px) {
+	.icons-row-one .fa {
+		font-size: 60px;
+	}
+}
+/*Area 2 Styles*/
+.iphone-div img{
+	width: 100%;
+}
 .area2 {
-	background: url('./area2.jpeg');
+	background: url('../images/area2.jpeg');
 	font-family: 'Istok Web';
 	background-attachment: fixed;
 	background-position: center; 
 	opacity: .9;
 }
-.iphone-div img{
-	width: 100%;
+.area2 {
+	padding-bottom: 30px;
 }
 .area2 .col-md-7 {
 	padding-right: 80px;
 }
 .area2 h2{
-	font-size: 108px;
+	font-size: 70px;
 	color: white;
 }
 .area2 p {
@@ -72,6 +83,31 @@ a {
 	letter-spacing: 1.5px;
 	margin-bottom: 20px;
 }
+@media screen and (max-width: 992px) {
+	.area2 {
+		background-position: top; 
+		text-align: center;
+		padding-bottom: 30px;
+		background-repeat: repeat;
+		background-size: auto auto;
+		background-origin: content-box;
+	}
+	.iphone-div img{
+		width: 80%;
+	}
+	.area2 .col-md-7 {
+		padding-right: 0;
+	}
+	.area2 h2 {
+		font-size: 50px;
+	}
+	.area2 p {
+		padding-right: 15px;
+	}
+
+}
+
+/*Area 3 Styles*/
 .icons-row-two {
 	margin: 45px 0;
 	margin-bottom: 15px;
@@ -79,18 +115,28 @@ a {
 }
 .icons-row-two h3 {
 	font-family: 'Merriweather', Serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 .icons-row-two .fa {
 	font-size: 60px;
 }
 .icons-row-two a {
-	color: maroon;
+	color: #767784;
 	text-decoration: none;
+	cursor: pointer;
 }
 .icons-row-two a:hover {
 	color: lightblue;
 }
+@media screen and (max-width: 900px) {
+	.icons-row-two .fa {
+		font-size: 50px;
+	}
+	.icons-row-two h3 {
+		font-size: 16px;
+	}
+}
+/*Various Elements*/
 .ghostbutton,
 .ghostbutton:visited{
 	display: inline-block;
@@ -109,22 +155,37 @@ a {
 	text-decoration: none;
 	color: black;
 }
+/*Modal Styles*/
 .modal {
 	background: white;
 	height: 325px;
 	width: 440px;
 	padding: 5px 46px;
 	border-radius: 10px;
+	transition: .3s;
 }
 .modal ul {
 	font-size: 20px;
 	margin-bottom: 150px;
 }
+@media screen and (max-width: 900px) {
+	.modal {
+		width: 380px;
+		margin-left: 2%;
+	}
+	.modal ul {
+		font-size: 20px;
+		margin-bottom: 100px;
+	}
+}
 #closemodal {
 	right: 0;
 }
+
+/*Footer Styles*/
 footer {
 	padding: 40px 30px;
+	margin-top: 35px;
 	background-color: lightgray;
 	text-align: center;
 }
